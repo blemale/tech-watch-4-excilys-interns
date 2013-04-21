@@ -9,13 +9,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link rel="stylesheet" href="/reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="/reveal.js/css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="/{{ site.baseUrl }}/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="/{{ site.baseUrl }}/reveal.js/css/theme/sky.css" id="theme">
 
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
-        document.write( '<link rel="stylesheet" href="/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        document.write( '<link rel="stylesheet" href="/{{ site.baseUrl }}/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
         
   </head>
@@ -28,8 +28,8 @@
 		</div>
 	</div>
       
-  		<script src="/reveal.js/lib/js/head.min.js"></script>
-		<script src="/reveal.js/js/reveal.min.js"></script>
+  		<script src="/{{ site.baseUrl }}/reveal.js/lib/js/head.min.js"></script>
+		<script src="/{{ site.baseUrl }}/reveal.js/js/reveal.min.js"></script>
 
 		<script>
 			Reveal.initialize({
@@ -41,14 +41,13 @@
 				transition: 'default', 
 
 				dependencies: [
-					{ src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/{{ site.baseUrl }}/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/{{ site.baseUrl }}/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/{{ site.baseUrl }}/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 				]
 			});
 
 		</script>
-
     
   </body>
 </html>
