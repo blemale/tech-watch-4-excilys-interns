@@ -9,8 +9,8 @@ markdown: rdiscount
 #
 # Site configuration
 #
-title: "tech-watch-4-excilys-interns"
-description: "Presentation about technology watch for Excilys interns"
-baseUrl: "tech-watch-4-excilys-interns"
+title: "tech-watch"
+description: "Presentation about technology watch for everyone"
+baseUrl: "tech-watch"
 author: "Bastien Lemale"
 email: "blemale@excilys.com"
